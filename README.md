@@ -28,8 +28,9 @@ a website that displays confirmed cases  covid 19 in Indonesia  all of the time 
 
 
 
-## API
+## API and library
 postman-covid19 api
+Chart.js
 
 
 
