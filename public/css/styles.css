@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    color: black;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+}
+
+#container {
+    width: 100%;
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+
+
+/* nav css */
+
+nav {
+    display: flex;
+    background-color: #700e70;
+    justify-content: space-between;
+    padding: 40px 50px;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+nav .logo {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    transition: 0.3s ease;
+}
+
+
+
+nav .logo a {
+    padding: 0 10px;
+    color: #a79b9b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+nav .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li a {
+    color: #4b4949;
+    padding: 20px;
+    text-decoration: none;    
+    font-size: 16px ;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+nav ul li .active {
+    color: #ddda13;   
+}
+
+nav ul li a:hover {
+    color: #ddda13;   
+}
+
+
+.burger {
+    display: none;
+}
+
+
+.burger div{
+    width: 20px;
+    height: 3px;
+    background-color: #3f2929;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+
+.main-content {
+
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+
+.banner {
+    display: flex;
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+}
+
+
+.heading-text {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+    padding: 0.5em;
+}
+
+.heading-text p {
+    padding: 0.2em;
+    font-size: 20px;
+    font-weight: 600;
+    color: #524949;
+
+}
+
+.heading-1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #352f2f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.link-main {
+    width: 40% ;
+    border: 1px solid ;
+    text-decoration: none;
+    margin-top: 70px;
+    background-color: #ddda13;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px 0px;
+    transition: 0.5s ease;
+}
+
+.link-main:hover {
+    background-color: #700e70;
+}
+
+
+.banner-img {
+    flex: 1;
+    z-index: -1;
+    width: 30%;
+    margin-right: 50px;
+    max-width: 1028px;
+    min-width: 400px;
+}
+
+
+
+
+.closing {
+    display: flex;
+    width: 70%;
+    background-color: #6bbae7;
+    justify-content: center;
+}
+
+
+
+.sc-list {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+
+
+.wjh {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.sc {
+    padding: 10px;
+}
+
+.banner-author {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+    color: #2e2b2b;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.data {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.description h1 {
+    color: #473747;
+    background-color: #ddda13;
+    text-align: justify;
+    border-radius: 10%;
+}
+.chart {
+    margin: 100px;
+    width: 80%;
+
+}
+
+
+
+
+
+
+
+
+
+
+                    @media screen and (max-width:768px) {
+
+        
+                        
+
+                        body {
+                            overflow-x: hidden;
+                        }
+
+                        nav {
+                            padding: 40px 50px;
+                        }
+
+                        nav ul li a {
+                            color: #f8f8f8;
+                        }
+
+                    .nav-links {
+                        position: absolute;
+                        height: 92vh;
+                        top: 10vh;
+                        right: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        background-color:#22aaaa;
+                        align-items: center;
+                        width: 30%;
+                        z-index: 0;
+                        transform: translateX(100%);
+                        transition: transform 0.5s ease-in; 
+                    }
+
+                    .nav-link li {
+                        opacity: 0;
+                    }
+
+
+                    .burger {
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                        nav ul li .active {
+                            color: #473747;   
+                        }
+
+
+
+                    .nav-active {
+                        transform: translateX(0%);
+                    }
+
+
+                    .toggle .line1 {
+                        transform:  rotate(-45deg) translate(-5px, 6px);
+                    }
+
+                    .toggle .line2 {
+                        opacity: 0;
+                    }
+
+                    .toggle .line3 {
+                        transform:  rotate(45deg) translate(-5px, -6px);
+                    }
+
+
+                    .heading-1 {
+                        font-size: 40px;
+                        font-weight: 600;
+                        color: #352f2f;
+                        margin-bottom: 20px;
+                        }
+
+                        .heading-text p {
+                            padding: 0.2em;
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #524949;
+                        
+                        }
+
+                        .banner-img {
+                            flex: 1;
+                            z-index: -1;
+                            width: 30%;
+                            margin: 0 auto;
+                            max-width: 1028px;
+                            min-width: 400px;
+                            ;
+                        }
+                        
+
+                        .banner {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 40px;
+                            font-weight: 400;
+                            width: 100%;
+                        }
+
+                        .wjh {
+                            margin: auto;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                        }
+
+                        .heading-text {
+                            flex: 1;
+                            text-align: center;
+                            align-items: center;
+                        }
+
+                        
+                        .data {
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                        }
+                        
+                        .description h1 {
+                            color: #473747;
+                            background-color: #ddda13;
+                            text-align: justify;
+                            border-radius: 10%;
+                        }
+                        .chart {
+                            margin: 100px;
+                            width: 70%;
+                        
+                        }
+                        
+
+                    }
+
+
+                    @media screen and (max-width:644px) {
+
+                        .banner {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 40px;
+                            font-weight: 400;
+                            width: 100%;
+                        }
+                        
+                        .heading-text {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 50px ;
+                            padding: 0.5em;
+                        }
+                        
+                        .heading-text p {
+                            padding: 0.2em;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #524949;
+                        
+                        }
+                        
+                        .heading-1 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #352f2f;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .link-main {
+                            width: 40% ;
+                            border: 1px solid ;
+                            text-decoration: none;
+                            margin-top: 70px;
+                            background-color: #ddda13;
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: white;
+                            border-radius: 40px;
+                            text-align: center;
+                            padding: 10px 0px;
+                            transition: 0.5s ease;
+                        }
+
+                        
+                    }
+
+                    @media screen and (max-width:375px) {
+                        
+                        .banner-img {
+                            position: absolute;
+                            top: 400px;
+                            width: ;
+
+                        }
+
+                        .heading-text {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 auto;
+                            padding: 0.5em;
+                        }
+                        
+                        .heading-text p {
+                            padding: 0.2em;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #524949;
+                        
+                        }
+                        
+                        .heading-1 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #352f2f;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .link-main {
+                            width: 40% ;
+                            border: 1px solid ;
+                            text-decoration: none;
+                            margin-top: 70px;
+                            background-color: #ddda13;
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: white;
+                            border-radius: 40px;
+                            text-align: center;
+                            padding: 10px 0px;
+                            transition: 0.5s ease;
+                        }
+
+                        .data {
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                        }
+                        
+                        .description h1 {
+                            margin: 0 20%;
+                            color: #473747;
+                            background-color: #ddda13;
+                            text-align: justify;
+                            border-radius: 10%;
+                            font-size: 20px;
+                        }
+                        .chart {
+                            margin: 100px;
+                            width: 60%;
+                        
+                        }
+                        
+                    }
