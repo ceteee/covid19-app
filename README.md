@@ -13,9 +13,6 @@
 
 a website that displays confirmed cases  covid 19 in Indonesia  all of the time :rocket:
 
-# Demo
-👉 Click it <a href="https://chrstmbn-covid19-app.herokuapp.com/">here</a>.:point_left:
-<br>
 
 ## mobile
 <img src="public/screenshoots/1.jpeg" height="400px">
